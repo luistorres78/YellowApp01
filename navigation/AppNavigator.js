@@ -8,6 +8,8 @@ import SignUp from '../screens/SignUp';
 import Login from '../screens/Login';
 import publish from '../screens/Publish';
 import CameraExample from '../screens/camera';
+import Chat from '../screens/chat';
+
 
 export default createStackNavigator(
   {
@@ -19,6 +21,7 @@ export default createStackNavigator(
   Main: Main,
   Publish: publish,
   Camera: CameraExample,
+  Chat: Chat,
 },
 {
   initialRouteName: 'Home',

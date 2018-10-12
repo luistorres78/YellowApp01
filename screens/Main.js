@@ -62,6 +62,10 @@ export default class Main extends React.Component {
                         <Icon name="star" type="evilicon" />
                         <Text> Publica un anuncio </Text>
                     </Button>
+                    <Button transparent onPress={() => this.props.navigation.navigate('Chat')}>
+                        <Icon name="envelope" type="evilicon" />
+                        <Text> Mensaje </Text>
+                    </Button>
                 </View>
             </View >
         );
