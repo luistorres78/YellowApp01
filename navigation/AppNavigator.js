@@ -1,10 +1,26 @@
 import React from 'react';
-import { createSwitchNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
+import HomeScreen from '../screens/HomeScreen';
+import ListItem from '../screens/ListItems';
+import Loading from '../screens/Loading';
+import Main from '../screens/Main';
+import SignUp from '../screens/SignUp';
+import Login from '../screens/Login';
+import publish from '../screens/Publish';
+import CameraExample from '../screens/camera';
 
-import MainTabNavigator from './MainTabNavigator';
-
-export default createSwitchNavigator({
-  // You could add another route here for authentication.
-  // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-  Main: MainTabNavigator,
-});
+export default createStackNavigator(
+  {
+  Home: HomeScreen,
+  List: ListItem,
+  Loading: Loading,
+  SignUp: SignUp,
+  Login: Login,
+  Main: Main,
+  Publish: publish,
+  Camera: CameraExample,
+},
+{
+  initialRouteName: 'Home',
+}
+);
